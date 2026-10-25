@@ -30,16 +30,6 @@ export default function Home() {
             }}
           >
             <div>
-              {/* Status Badge */}
-              <div style={{ marginBottom: "1.5rem" }}>
-                <span className="badge badge-accent">
-                  <span className="ping-wrapper">
-                    <span className="ping-circle" />
-                    <span className="ping-dot" />
-                  </span>
-                  Director of Growth at Passage • SaaS Growth Leader
-                </span>
-              </div>
 
               {/* Main Headline */}
               <h1
