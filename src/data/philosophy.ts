@@ -12,7 +12,7 @@ export const principles: Principle[] = [
     number: "01",
     title: "Simple things, done consistently, drive the greatest impact",
     quote: "The things that drive the most impact for a business are simple. The magic is in performing simple things consistently.",
-    body: "In high-growth SaaS, teams often chase complicated growth hacks while neglecting foundational levers: crystal-clear positioning, responsive onboarding, fast page loads, and continuous customer conversations. Consistency on the fundamentals will always compound faster than sporadic brilliance.",
+    body: "In fast-paced tech companies, teams often chase complicated growth hacks while neglecting foundational levers: crystal-clear positioning, responsive onboarding, fast user experiences, and continuous customer conversations. Consistency on the fundamentals will always compound faster than sporadic brilliance.",
     takeaway: "Master the basics before inventing complexity.",
     tag: "Core Creed",
   },

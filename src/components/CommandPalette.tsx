@@ -113,7 +113,7 @@ export function CommandPalette() {
     {
       id: "growthlog",
       title: "Growth Log Newsletter",
-      subtitle: "Read actionable SaaS growth guides on Substack",
+      subtitle: "Read actionable growth playbooks and frameworks on Substack",
       icon: <ExternalLink size={16} />,
       category: "Writing",
       action: () => {

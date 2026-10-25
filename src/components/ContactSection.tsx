@@ -76,8 +76,8 @@ export function ContactSection() {
             marginBottom: "1.75rem",
           }}
         >
-          Have a SaaS growth bottleneck to solve, a GTM question, or an advisory
-          opportunity? Fill out the form or reach out directly on LinkedIn.
+          Have a growth bottleneck to solve, a GTM question, or an advisory
+          opportunity for your tech venture? Fill out the form or reach out directly on LinkedIn.
         </p>
 
         {/* LinkedIn Direct CTA Card */}
@@ -417,7 +417,7 @@ export function ContactSection() {
               <input
                 id="subject"
                 type="text"
-                placeholder="SaaS Growth, GTM Advisory, or Consultation"
+                placeholder="Growth Strategy, GTM Advisory, or Consultation"
                 value={formData.subject}
                 onChange={(e) =>
                   setFormData({ ...formData, subject: e.target.value })

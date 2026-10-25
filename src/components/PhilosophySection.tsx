@@ -254,7 +254,7 @@ export function PhilosophySection() {
                 letterSpacing: "-0.01em",
               }}
             >
-              Growth Log — The growth newsletter for SaaS people
+              Growth Log — Actionable growth playbooks for tech leaders
             </div>
             <div
               style={{

@@ -42,7 +42,7 @@ export default function Home() {
                   marginBottom: "1.5rem",
                 }}
               >
-                Scaling SaaS from <br />
+                Scaling tech companies from <br />
                 <span className="editorial" style={{ fontWeight: 400 }}>
                   early traction
                 </span>{" "}
@@ -438,7 +438,7 @@ export default function Home() {
                 marginBottom: "0.75rem",
               }}
             >
-              11 years of driving SaaS growth.
+              11+ years of scaling tech companies.
             </h2>
             <p
               style={{
@@ -528,7 +528,7 @@ export default function Home() {
               }}
             >
               The foundational convictions that guide how I diagnose funnels,
-              position products, and scale SaaS organizations.
+              position products, and scale high-growth tech companies.
             </p>
           </div>
 

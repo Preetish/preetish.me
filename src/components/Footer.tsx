@@ -56,7 +56,7 @@ export function Footer() {
                 marginBottom: "1.25rem",
               }}
             >
-              Marketing leader with 11+ years of experience scaling B2B SaaS
+              Marketing leader with 11+ years of experience scaling modern tech
               products from early traction to millions in ARR.
             </p>
             <div

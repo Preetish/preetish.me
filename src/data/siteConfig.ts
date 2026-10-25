@@ -25,11 +25,11 @@ export const siteConfig: SiteConfig = {
   title: "Preetish Panda — Full-Stack Marketer & Growth Leader",
   role: "Full-Stack Marketer & Growth Leader",
   avatar: "/images/avatar.jpg",
-  tagline: "Marketing leader with 11+ years of experience driving sustainable growth for SaaS companies.",
+  tagline: "Marketing leader with 11+ years of experience driving sustainable growth for modern tech companies.",
   shortBio:
-    "An engineer-turned-growth leader blending analytical rigor with creative positioning. Experienced in taking SaaS startups from zero-to-one traction to millions in ARR.",
+    "An engineer-turned-growth leader blending analytical rigor with creative positioning. Experienced in taking tech companies from zero-to-one traction to millions in ARR.",
   fullBio: [
-    "I am a marketing leader with over 11 years of hands-on experience scaling SaaS businesses. My journey started in computer science and software engineering at Oracle, which instilled in me a deep appreciation for systems thinking, data architecture, and rigorous experimentation.",
+    "I am a marketing leader with over 11 years of hands-on experience scaling high-growth tech companies. My journey started in computer science and software engineering at Oracle, which instilled in me a deep appreciation for systems thinking, data architecture, and rigorous experimentation.",
     "Over the past decade, I've brought that engineering mindset to growth and GTM—joining Bettermode as employee #2 to build the marketing engine from scratch, scaling ARR into the multi-millions, leading growth at Passage, and accelerating revenue across multiple B2B startups.",
     "Here is what I believe: the things that drive the most impact for a business are simple. The magic is in performing simple things consistently.",
   ],
@@ -64,7 +64,7 @@ export const siteConfig: SiteConfig = {
     {
       label: "Experience",
       value: "11+",
-      subtext: "Years driving SaaS scale",
+      subtext: "Years scaling tech companies",
     },
     {
       label: "ARR Scaled",
