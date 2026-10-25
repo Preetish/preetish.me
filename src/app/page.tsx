@@ -61,7 +61,7 @@ export default function Home() {
               >
                 I&apos;m <strong>Preetish Panda</strong>, Director of Growth at{" "}
                 <strong>Passage</strong> and former marketing builder at{" "}
-                <strong>Bettermode</strong>. With 11+ years blending engineering
+                <strong>Bettermode</strong>. With 14 years blending engineering
                 rigor with creative positioning, I build repeatable acquisition
                 flywheels, GTM plays, and product marketing engines that compound.
               </p>
@@ -438,7 +438,7 @@ export default function Home() {
                 marginBottom: "0.75rem",
               }}
             >
-              11+ years of scaling tech companies.
+              14 years of scaling tech companies.
             </h2>
             <p
               style={{

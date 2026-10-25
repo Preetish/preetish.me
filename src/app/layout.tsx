@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://preetish.me"),
   title: "Preetish Panda — Full-Stack Marketer & Growth Leader",
   description:
-    "Marketing leader with 11+ years of experience driving sustainable growth for modern tech companies. Engineering background applied to full-funnel acquisition, GTM, and ARR scaling.",
+    "Marketing leader with 14 years of experience driving sustainable growth for modern tech companies. Engineering background applied to full-funnel acquisition, GTM, and ARR scaling.",
   authors: [{ name: "Preetish Panda", url: "https://preetish.me" }],
   creator: "Preetish Panda",
   keywords: [
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     url: "https://preetish.me",
     title: "Preetish Panda — Full-Stack Marketer & Growth Leader",
     description:
-      "Marketing leader with 11+ years of experience driving sustainable growth for modern tech companies.",
+      "Marketing leader with 14 years of experience driving sustainable growth for modern tech companies.",
     siteName: "Preetish Panda",
     images: [
       {
@@ -68,7 +68,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Preetish Panda — Full-Stack Marketer & Growth Leader",
     description:
-      "Marketing leader with 11+ years of experience driving sustainable growth for modern tech companies.",
+      "Marketing leader with 14 years of experience driving sustainable growth for modern tech companies.",
     creator: "@Pr33tish",
     images: ["/images/avatar.jpg"],
   },
