@@ -7,7 +7,7 @@ import { ExperienceFilter } from "@/components/ExperienceFilter";
 import { SkillsGrid } from "@/components/SkillsGrid";
 import { PhilosophySection } from "@/components/PhilosophySection";
 import { ContactSection } from "@/components/ContactSection";
-import { ArrowUpRight, Sparkles, CheckCircle2, Terminal, TrendingUp, Compass } from "lucide-react";
+import { ArrowUpRight, Sparkles, Terminal, TrendingUp, Compass } from "lucide-react";
 
 export default function Home() {
   return (
@@ -315,8 +315,7 @@ export default function Home() {
                 style={{
                   display: "flex",
                   flexDirection: "column",
-                  gap: "0.75rem",
-                  marginBottom: "2rem",
+                  gap: "0.85rem",
                 }}
               >
                 {siteConfig.fullBio.map((item, idx) => {
@@ -357,39 +356,6 @@ export default function Home() {
                     </div>
                   );
                 })}
-              </div>
-
-              {/* Core Strengths Checklist */}
-              <div
-                style={{
-                  display: "grid",
-                  gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
-                  gap: "0.875rem",
-                }}
-              >
-                {[
-                  "Engineering systems mindset",
-                  "Multi-channel acquisition",
-                  "GTM & product positioning",
-                  "Enterprise ABM campaigns",
-                  "Team leadership & mentorship",
-                  "Data-driven experimentation",
-                ].map((item, i) => (
-                  <div
-                    key={i}
-                    style={{
-                      display: "flex",
-                      alignItems: "center",
-                      gap: "0.5rem",
-                      fontSize: "0.875rem",
-                      color: "var(--text-primary)",
-                      fontWeight: 500,
-                    }}
-                  >
-                    <CheckCircle2 size={16} color="var(--accent-primary)" />
-                    <span>{item}</span>
-                  </div>
-                ))}
               </div>
             </div>
           </div>
