@@ -205,9 +205,9 @@ export default function Home() {
                 <Image
                   src="/images/promptcloud-logo.png"
                   alt="PromptCloud"
-                  width={68}
-                  height={17}
-                  style={{ objectFit: "contain", height: "17px", width: "auto" }}
+                  width={74}
+                  height={30}
+                  style={{ objectFit: "contain", height: "30px", width: "auto" }}
                 />
               </div>
 
