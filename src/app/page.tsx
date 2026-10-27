@@ -285,23 +285,6 @@ export default function Home() {
                     display: "block",
                   }}
                 />
-                <div
-                  style={{
-                    padding: "1.25rem 1.5rem",
-                    borderTop: "1px solid var(--border-subtle)",
-                    backgroundColor: "var(--bg-surface)",
-                  }}
-                >
-                  <div
-                    style={{
-                      fontSize: "1rem",
-                      fontWeight: 600,
-                      color: "var(--text-primary)",
-                    }}
-                  >
-                    Preetish Panda
-                  </div>
-                </div>
               </div>
             </div>
 
