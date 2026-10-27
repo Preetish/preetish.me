@@ -31,7 +31,7 @@ export const siteConfig: SiteConfig = {
   fullBio: [
     "Background: Engineer from Oracle who brought systems thinking and data architecture to growth.",
     "Track Record: 14 years scaling tech companies—built Bettermode to $10M+ ARR as employee #2, and currently scaling Passage ($6M → $21M ARR).",
-    "Philosophy: Outsized impact comes from executing simple things with relentless consistency.",
+    "Philosophy: Outsized impact comes from executing simple things consistently.",
   ],
   newsletterUrl: "https://growthlog.substack.com",
   socials: [

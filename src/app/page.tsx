@@ -306,7 +306,7 @@ export default function Home() {
               >
                 Collaborative, creative, and{" "}
                 <span className="editorial" style={{ fontWeight: 400 }}>
-                  relentlessly analytical.
+                  analytical.
                 </span>
               </h2>
 
