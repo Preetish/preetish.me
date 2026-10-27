@@ -216,54 +216,63 @@ export function PhilosophySection() {
       {/* Growth Log Newsletter Spotlight Card */}
       <div
         id="newsletter"
+        className="newsletter-card"
         style={{
           display: "flex",
           alignItems: "center",
           justifyContent: "space-between",
           gap: "1.5rem",
           flexWrap: "wrap",
-          padding: "1.75rem 2rem",
+          padding: "1.5rem 1.75rem",
           borderRadius: "var(--radius-lg)",
-          backgroundColor: "var(--accent-surface)",
-          border: "1px solid var(--accent-border)",
+          backgroundColor: "var(--bg-surface)",
+          border: "1px solid var(--border-subtle)",
+          boxShadow: "var(--card-shadow)",
           scrollMarginTop: "6rem",
-          transition: "var(--transition-smooth)",
         }}
       >
-        <div style={{ display: "flex", alignItems: "center", gap: "1rem" }}>
+        <div style={{ display: "flex", alignItems: "center", gap: "1.1rem" }}>
           <div
             style={{
               width: 44,
               height: 44,
               borderRadius: "10px",
-              backgroundColor: "var(--bg-surface)",
+              backgroundColor: "var(--accent-surface)",
               border: "1px solid var(--accent-border)",
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              color: "var(--accent-text)",
+              color: "var(--accent-primary)",
               flexShrink: 0,
             }}
           >
-            <BookOpen size={22} />
+            <BookOpen size={20} />
           </div>
 
           <div>
             <div
               style={{
-                fontSize: "1rem",
+                fontSize: "0.9375rem",
                 fontWeight: 600,
-                color: "var(--accent-text)",
+                color: "var(--text-primary)",
                 letterSpacing: "-0.01em",
+                display: "flex",
+                alignItems: "center",
+                gap: "0.5rem",
+                flexWrap: "wrap",
               }}
             >
-              Growth Log — Actionable growth playbooks for tech leaders
+              <span>Growth Log</span>
+              <span style={{ color: "var(--text-tertiary)", fontWeight: 400 }}>—</span>
+              <span style={{ color: "var(--text-secondary)", fontWeight: 500 }}>
+                Actionable growth playbooks for tech leaders
+              </span>
             </div>
             <div
               style={{
                 fontSize: "0.8125rem",
-                color: "var(--text-secondary)",
-                marginTop: "0.2rem",
+                color: "var(--text-tertiary)",
+                marginTop: "0.25rem",
               }}
             >
               Actionable guides, practical frameworks, and counter-intuitive growth ideas.

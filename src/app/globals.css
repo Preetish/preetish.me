@@ -273,9 +273,20 @@ img {
   transform: translateY(-2px);
 }
 
-/* Newsletter Spotlight Target */
+/* Newsletter Spotlight Card */
+.newsletter-card {
+  transition: var(--transition-smooth);
+}
+
+.newsletter-card:hover {
+  border-color: var(--border-hover) !important;
+  background-color: var(--bg-surface-elevated) !important;
+  transform: translateY(-2px);
+}
+
 #newsletter:target {
-  box-shadow: 0 0 0 2px var(--accent-primary), var(--card-shadow-hover);
+  border-color: var(--border-hover) !important;
+  box-shadow: var(--card-shadow-hover);
 }
 
 /* Bio Pillar Cards */
