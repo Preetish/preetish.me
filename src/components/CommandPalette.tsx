@@ -113,13 +113,10 @@ export function CommandPalette() {
     {
       id: "growthlog",
       title: "Growth Log Newsletter",
-      subtitle: "Read actionable growth playbooks and frameworks on Substack",
-      icon: <ExternalLink size={16} />,
-      category: "Writing",
-      action: () => {
-        window.open(siteConfig.newsletterUrl, "_blank");
-        setOpen(false);
-      },
+      subtitle: "Move to newsletter spotlight card & Substack link",
+      icon: <BookOpen size={16} />,
+      category: "Navigation",
+      action: () => jumpTo("newsletter"),
     },
     {
       id: "contact",

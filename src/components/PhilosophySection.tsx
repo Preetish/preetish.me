@@ -215,6 +215,7 @@ export function PhilosophySection() {
 
       {/* Growth Log Newsletter Spotlight Card */}
       <div
+        id="newsletter"
         style={{
           display: "flex",
           alignItems: "center",
@@ -225,6 +226,8 @@ export function PhilosophySection() {
           borderRadius: "var(--radius-lg)",
           backgroundColor: "var(--accent-surface)",
           border: "1px solid var(--accent-border)",
+          scrollMarginTop: "6rem",
+          transition: "var(--transition-smooth)",
         }}
       >
         <div style={{ display: "flex", alignItems: "center", gap: "1rem" }}>

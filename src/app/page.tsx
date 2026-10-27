@@ -491,7 +491,6 @@ export default function Home() {
           position: "relative",
         }}
       >
-        <div id="newsletter" style={{ position: "absolute", top: "-4rem" }} />
         <div className="container">
           <div style={{ maxWidth: "680px", marginBottom: "2.5rem" }}>
             <span className="badge badge-accent" style={{ marginBottom: "1rem" }}>

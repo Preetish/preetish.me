@@ -273,6 +273,11 @@ img {
   transform: translateY(-2px);
 }
 
+/* Newsletter Spotlight Target */
+#newsletter:target {
+  box-shadow: 0 0 0 2px var(--accent-primary), var(--card-shadow-hover);
+}
+
 /* Badge Component */
 .badge {
   display: inline-flex;
