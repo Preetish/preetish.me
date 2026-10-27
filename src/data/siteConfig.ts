@@ -63,8 +63,8 @@ export const siteConfig: SiteConfig = {
   stats: [
     {
       label: "Experience",
-      value: "14",
-      subtext: "Years scaling tech companies",
+      value: "14+ Years",
+      subtext: "Scaling tech companies",
     },
     {
       label: "ARR Scaled",
