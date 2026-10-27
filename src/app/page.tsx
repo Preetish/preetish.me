@@ -7,7 +7,7 @@ import { ExperienceFilter } from "@/components/ExperienceFilter";
 import { SkillsGrid } from "@/components/SkillsGrid";
 import { PhilosophySection } from "@/components/PhilosophySection";
 import { ContactSection } from "@/components/ContactSection";
-import { ArrowUpRight, Sparkles, CheckCircle2 } from "lucide-react";
+import { ArrowUpRight, Sparkles, CheckCircle2, Terminal, TrendingUp, Compass } from "lucide-react";
 
 export default function Home() {
   return (
@@ -310,58 +310,52 @@ export default function Home() {
                 </span>
               </h2>
 
+              {/* Strategic Bio Pillars */}
               <div
                 style={{
                   display: "flex",
                   flexDirection: "column",
-                  gap: "0.85rem",
-                  fontSize: "0.9375rem",
-                  color: "var(--text-secondary)",
-                  lineHeight: 1.6,
+                  gap: "0.75rem",
                   marginBottom: "2rem",
                 }}
               >
-                {siteConfig.fullBio.map((paragraph, idx) => {
-                  const colonIndex = paragraph.indexOf(":");
-                  if (colonIndex !== -1 && colonIndex < 25) {
-                    const label = paragraph.slice(0, colonIndex);
-                    const rest = paragraph.slice(colonIndex + 1);
-                    return (
-                      <div
-                        key={idx}
-                        style={{
-                          display: "flex",
-                          alignItems: "flex-start",
-                          gap: "0.65rem",
-                        }}
-                      >
-                        <span
-                          style={{
-                            color: "var(--accent-primary)",
-                            fontSize: "1.2rem",
-                            lineHeight: "1.35rem",
-                            fontWeight: 700,
-                            userSelect: "none",
-                          }}
-                        >
-                          •
-                        </span>
-                        <p style={{ margin: 0 }}>
-                          <strong
-                            style={{
-                              color: "var(--text-primary)",
-                              fontWeight: 600,
-                              letterSpacing: "-0.01em",
-                            }}
-                          >
-                            {label}:
-                          </strong>
-                          {rest}
+                {siteConfig.fullBio.map((item, idx) => {
+                  const colonIndex = item.indexOf(":");
+                  const label = colonIndex !== -1 ? item.slice(0, colonIndex) : "";
+                  const text = colonIndex !== -1 ? item.slice(colonIndex + 1).trim() : item;
+
+                  const icon =
+                    idx === 0 ? (
+                      <Terminal size={15} />
+                    ) : idx === 1 ? (
+                      <TrendingUp size={15} />
+                    ) : (
+                      <Compass size={15} />
+                    );
+
+                  return (
+                    <div key={idx} className="bio-pillar-card">
+                      <div className="bio-pillar-icon">{icon}</div>
+                      <div>
+                        {label && <div className="bio-pillar-label">{label}</div>}
+                        <p className="bio-pillar-text">
+                          {idx === 0 ? (
+                            <>
+                              Engineer from <strong>Oracle</strong> who brought systems thinking and data architecture to growth.
+                            </>
+                          ) : idx === 1 ? (
+                            <>
+                              14 years scaling tech companies—from early-stage scale{" "}
+                              <strong>($0 → $5M+)</strong> to ARR expansion{" "}
+                              <strong>($6M → $21M)</strong>.
+                            </>
+                          ) : (
+                            text
+                          )}
                         </p>
                       </div>
-                    );
-                  }
-                  return <p key={idx}>{paragraph}</p>;
+                    </div>
+                  );
                 })}
               </div>
 
