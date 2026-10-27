@@ -345,9 +345,9 @@ export default function Home() {
                             </>
                           ) : idx === 1 ? (
                             <>
-                              14 years scaling tech companies—from early-stage scale{" "}
-                              <strong>($0 → $5M+)</strong> to ARR expansion{" "}
-                              <strong>($6M → $21M)</strong>.
+                              14 years scaling tech companies—from{" "}
+                              <strong>zero-to-one traction</strong> to{" "}
+                              <strong>multi-stage ARR expansion</strong>.
                             </>
                           ) : (
                             text

@@ -30,7 +30,7 @@ export const siteConfig: SiteConfig = {
     "An engineer-turned-growth leader blending analytical rigor with creative positioning. Experienced in taking tech companies from zero-to-one traction to millions in ARR.",
   fullBio: [
     "Background: Engineer from Oracle who brought systems thinking and data architecture to growth.",
-    "Track Record: 14 years scaling tech companies—from early-stage scale ($0 → $5M+) to ARR expansion ($6M → $21M).",
+    "Track Record: 14 years scaling tech companies—from zero-to-one traction to multi-stage ARR expansion.",
     "Philosophy: Outsized impact comes from executing simple things consistently.",
   ],
   newsletterUrl: "https://growthlog.substack.com",
