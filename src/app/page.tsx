@@ -421,7 +421,9 @@ export default function Home() {
                 marginBottom: "0.75rem",
               }}
             >
-              14 years of scaling tech companies.
+              14 years of scaling
+              <br />
+              tech companies.
             </h2>
             <p
               style={{
