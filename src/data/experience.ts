@@ -27,24 +27,23 @@ export const experiences: ExperienceItem[] = [
     logo: "/images/passagehq-logo.jpg",
     logoAlt: "Passage",
     summary:
-      "Leading growth across the full acquisition funnel, product-led activation, and lifecycle execution—scaling ARR from $6M to $21M.",
+      "Leading growth across the full acquisition funnel, product-led activation, and lifecycle execution.",
     description:
-      "Joined Passage to head growth. Focused on building repeatable acquisition flywheels, driving product-led activation, and optimizing the customer journey from first touch to expansion, scaling ARR from $6M to $21M.",
+      "Joined Passage to head growth. Focused on building repeatable acquisition flywheels, driving product-led activation, and optimizing the customer journey from first touch to expansion.",
     highlights: [
-      "Scaled ARR from $6M to $21M (3.5x growth) by building high-velocity acquisition channels and compounding lifecycle flywheels.",
-      "Own the end-to-end customer acquisition funnel across paid performance, organic inbound, and strategic channels.",
+      "Accelerated full-funnel acquisition by building high-velocity organic, paid, and lifecycle growth channels.",
+      "Own the end-to-end customer journey across acquisition, activation, and product expansion.",
       "Architected product-led onboarding sequences and automated lifecycle loops that improved user activation.",
       "Collaborate closely with product, sales, and engineering to sharpen positioning and accelerate GTM velocity.",
     ],
     skills: [
-      "$6M → $21M Scale",
-      "3.5x ARR Expansion",
       "Growth Leadership",
       "Full-Funnel Acquisition",
       "GTM Strategy",
       "Product Activation",
+      "Lifecycle Loops",
+      "Conversion Optimization",
     ],
-    metrics: "$6M → $21M ARR (3.5x)",
   },
   {
     id: "bettermode-marketing",
@@ -57,23 +56,23 @@ export const experiences: ExperienceItem[] = [
     logo: "/images/bettermode-logo.png",
     logoAlt: "Bettermode",
     summary:
-      "Joined as employee #2 and built the entire marketing organization from scratch, scaling ARR to $10M+.",
+      "Joined as employee #2 and built the entire marketing organization from scratch, driving zero-to-one category leadership.",
     description:
-      "Built the marketing foundations from day zero. Handled everything from inbound demand generation and account-based marketing (ABM) to product marketing, company rebranding, and customer acquisition.",
+      "Built the marketing foundations from day zero as employee #2. Handled everything from inbound demand generation and account-based marketing (ABM) to product marketing, company rebranding, and customer acquisition.",
     highlights: [
-      "Scaled ARR from early bootstrap stage into double-digit millions ($10M+) as marketing employee #2.",
+      "Joined as marketing employee #2 and built the marketing department, systems, and playbooks from scratch.",
       "Architected an organic content and SEO engine that drove hundreds of thousands of organic visits and qualified pipeline.",
       "Executed targeted Account-Based Marketing (ABM) plays converting high-value enterprise accounts.",
       "Recruited, led, and mentored a cross-functional marketing team across content, design, and growth.",
     ],
     skills: [
+      "Employee #2",
       "0 → 1 Building",
-      "ARR Scaling ($10M+)",
       "Account-Based Marketing (ABM)",
       "Inbound Flywheel",
       "Brand & Positioning",
+      "Team Leadership",
     ],
-    metrics: "Scaled ARR to $10M+ from scratch",
   },
   {
     id: "promptcloud-growth",
@@ -86,22 +85,21 @@ export const experiences: ExperienceItem[] = [
     logo: "/images/promptcloud-logo.png",
     logoAlt: "PromptCloud",
     summary:
-      "Developed and executed marketing plans resulting in a 300% increase in revenue over a 3-year period.",
+      "Developed and executed marketing plans resulting in substantial multi-year revenue and pipeline expansion.",
     description:
       "Managed a dedicated team of 3 marketers and oversaw all inbound and outbound marketing initiatives, web analytics, and lead generation pipelines for enterprise web data extraction.",
     highlights: [
-      "Achieved a 300% increase in revenue over a 3-year horizon through repeatable growth playbooks.",
+      "Achieved compounding growth over a 3-year horizon through repeatable inbound and outbound growth playbooks.",
       "Spearheaded targeted inbound marketing and technical SEO campaigns attracting global enterprises.",
       "Managed marketing budget and optimized unit economics across paid acquisition and content distribution.",
     ],
     skills: [
-      "300% Revenue Lift",
+      "Full-Funnel Growth",
       "Team Management",
       "Inbound Marketing",
       "Technical SEO",
       "Enterprise Lead Gen",
     ],
-    metrics: "+300% Revenue over 3 years",
   },
   {
     id: "teamwave-product",
@@ -114,22 +112,21 @@ export const experiences: ExperienceItem[] = [
     logo: "/images/teamwave-logo.png",
     logoAlt: "TeamWave",
     summary:
-      "Joined as the first marketing hire and scaled the company to $800k ARR within the first year.",
+      "Joined as the first marketing hire and established the foundational go-to-market engine within the first year.",
     description:
       "Analyzed market trends, customer needs, and competitor landscapes to develop and execute the comprehensive go-to-market (GTM) strategy for an all-in-one small business CRM and project platform.",
     highlights: [
-      "Scaled business from launch to $800,000 ARR in year one as foundational marketing hire.",
+      "Joined as foundational marketing hire to establish market positioning and product-led acquisition.",
       "Conducted in-depth customer interviews to sharpen value proposition and product messaging.",
       "Built automated email onboarding journeys that maximized free-to-paid conversion rates.",
     ],
     skills: [
       "First Marketing Hire",
-      "$800k ARR in 1 Year",
       "GTM Strategy",
       "User Research",
       "Product Messaging",
+      "Onboarding Automation",
     ],
-    metrics: "$800k ARR in Year 1",
   },
   {
     id: "infosys-consultant",

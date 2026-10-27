@@ -398,8 +398,8 @@ export default function Home() {
                 lineHeight: 1.6,
               }}
             >
-              From writing analytics algorithms at Oracle to scaling revenue from
-              scratch into double-digit millions at Bettermode, TeamWave, and PromptCloud.
+              From writing analytics algorithms at Oracle to building high-velocity
+              growth engines across Bettermode, Passage, TeamWave, and PromptCloud.
             </p>
           </div>
 
