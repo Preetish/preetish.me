@@ -29,9 +29,9 @@ export const siteConfig: SiteConfig = {
   shortBio:
     "An engineer-turned-growth leader blending analytical rigor with creative positioning. Experienced in taking tech companies from zero-to-one traction to millions in ARR.",
   fullBio: [
-    "I am a marketing leader with 14 years of hands-on experience scaling high-growth tech companies. My journey started in computer science and software engineering at Oracle, which instilled in me a deep appreciation for systems thinking, data architecture, and rigorous experimentation.",
-    "Over the past decade, I've brought that engineering mindset to growth and GTM—joining Bettermode as employee #2 to build the marketing engine from scratch, scaling ARR into the multi-millions, leading growth at Passage, and accelerating revenue across multiple B2B startups.",
-    "Here is what I believe: the things that drive the most impact for a business are simple. The magic is in performing simple things consistently.",
+    "Background: Engineer from Oracle who brought systems thinking and data architecture to growth.",
+    "Track Record: 14 years scaling tech companies—built Bettermode to $10M+ ARR as employee #2, and currently scaling Passage ($6M → $21M ARR).",
+    "Philosophy: Outsized impact comes from executing simple things with relentless consistency.",
   ],
   newsletterUrl: "https://growthlog.substack.com",
   socials: [

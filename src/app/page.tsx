@@ -331,16 +331,55 @@ export default function Home() {
                 style={{
                   display: "flex",
                   flexDirection: "column",
-                  gap: "1.1rem",
+                  gap: "0.85rem",
                   fontSize: "0.9375rem",
                   color: "var(--text-secondary)",
-                  lineHeight: 1.68,
+                  lineHeight: 1.6,
                   marginBottom: "2rem",
                 }}
               >
-                {siteConfig.fullBio.map((paragraph, idx) => (
-                  <p key={idx}>{paragraph}</p>
-                ))}
+                {siteConfig.fullBio.map((paragraph, idx) => {
+                  const colonIndex = paragraph.indexOf(":");
+                  if (colonIndex !== -1 && colonIndex < 25) {
+                    const label = paragraph.slice(0, colonIndex);
+                    const rest = paragraph.slice(colonIndex + 1);
+                    return (
+                      <div
+                        key={idx}
+                        style={{
+                          display: "flex",
+                          alignItems: "flex-start",
+                          gap: "0.65rem",
+                        }}
+                      >
+                        <span
+                          style={{
+                            color: "var(--accent-primary)",
+                            fontSize: "1.2rem",
+                            lineHeight: "1.35rem",
+                            fontWeight: 700,
+                            userSelect: "none",
+                          }}
+                        >
+                          •
+                        </span>
+                        <p style={{ margin: 0 }}>
+                          <strong
+                            style={{
+                              color: "var(--text-primary)",
+                              fontWeight: 600,
+                              letterSpacing: "-0.01em",
+                            }}
+                          >
+                            {label}:
+                          </strong>
+                          {rest}
+                        </p>
+                      </div>
+                    );
+                  }
+                  return <p key={idx}>{paragraph}</p>;
+                })}
               </div>
 
               {/* Core Strengths Checklist */}
