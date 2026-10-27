@@ -256,7 +256,7 @@ export default function Home() {
               display: "grid",
               gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
               gap: "3.5rem",
-              alignItems: "center",
+              alignItems: "end",
             }}
           >
             {/* Left: Portrait & Bio Card */}
