@@ -67,19 +67,19 @@ export const siteConfig: SiteConfig = {
       subtext: "Years scaling tech companies",
     },
     {
-      label: "ARR Scaled",
-      value: "$0 → $M+",
-      subtext: "From seed to multi-millions",
+      label: "Passage Scale",
+      value: "$6M → $21M",
+      subtext: "3.5x ARR expansion at current role",
+    },
+    {
+      label: "Bettermode ARR",
+      value: "$0 → $10M+",
+      subtext: "From seed to 8-figure revenue",
     },
     {
       label: "PromptCloud Lift",
-      value: "200%",
+      value: "300%",
       subtext: "Revenue growth over 3 years",
-    },
-    {
-      label: "TeamWave Launch",
-      value: "$800k",
-      subtext: "ARR generated in year one",
     },
   ],
 };

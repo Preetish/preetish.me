@@ -9,7 +9,7 @@ type FilterType = "all" | "growth" | "leadership" | "product" | "engineering";
 
 export function ExperienceFilter() {
   const [activeFilter, setActiveFilter] = useState<FilterType>("all");
-  const [expandedId, setExpandedId] = useState<string | null>("bettermode-growth");
+  const [expandedId, setExpandedId] = useState<string | null>("bettermode-marketing");
 
   const filterTabs: { id: FilterType; label: string }[] = [
     { id: "all", label: "All Experience" },

@@ -11,7 +11,7 @@ Built with **Next.js 16 (App Router)**, **TypeScript**, **Turbopack**, and vanil
 - **Soothing & Minimalist Aesthetics**: Refined editorial typography combining *Newsreader* serif with *Plus Jakarta Sans* geometric sans-serif.
 - **Flawless Light & Dark Modes**: Zero-hydration-shift theme toggling powered by CSS custom properties and localized storage persistence.
 - **Interactive Command Palette (`⌘K`)**: Fast keyboard navigation across sections, external links (LinkedIn, X/Twitter, Substack, GitHub), and theme switching.
-- **Chronological Career Timeline with Filter Pills**: Filter across *Growth*, *Leadership*, *Product*, and *Engineering* roles (Passage, Bettermode, PromptCloud, TeamWave, Infosys, Oracle) with authentic brand marks and dark-mode contrast protection.
+- **Chronological Career Timeline with Filter Pills**: Filter across *Growth*, *Leadership*, *Product*, and *Engineering* roles (Passage, Bettermode, PromptCloud, Infosys, Oracle) with authentic brand marks and dark-mode contrast protection.
 - **Philosophy & Growth Log Spotlight**: Interactive principle tabs highlighting systems thinking, qualitative/quantitative balancing, and Preetish's Substack newsletter [Growth Log](https://growthlog.substack.com).
 - **Privacy-First Contact Section**: Secure contact form with client-side validation and dedicated `/api/contact` route, paired with direct LinkedIn messaging.
 

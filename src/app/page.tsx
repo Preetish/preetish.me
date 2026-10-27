@@ -7,7 +7,7 @@ import { ExperienceFilter } from "@/components/ExperienceFilter";
 import { SkillsGrid } from "@/components/SkillsGrid";
 import { PhilosophySection } from "@/components/PhilosophySection";
 import { ContactSection } from "@/components/ContactSection";
-import { ArrowUpRight, FileDown, Sparkles, CheckCircle2 } from "lucide-react";
+import { ArrowUpRight, Sparkles, CheckCircle2 } from "lucide-react";
 
 export default function Home() {
   return (
@@ -60,7 +60,7 @@ export default function Home() {
                 }}
               >
                 I&apos;m <strong>Preetish Panda</strong>, Director of Growth at{" "}
-                <strong>Passage</strong> and former marketing builder at{" "}
+                <strong>Passage</strong> and former marketing leader at{" "}
                 <strong>Bettermode</strong>. With 14 years blending engineering
                 rigor with creative positioning, I build repeatable acquisition
                 flywheels, GTM plays, and product marketing engines that compound.
@@ -125,31 +125,6 @@ export default function Home() {
                 >
                   <span>Get in Touch</span>
                 </a>
-
-                <button
-                  onClick={() => window.print()}
-                  className="no-print"
-                  style={{
-                    display: "inline-flex",
-                    alignItems: "center",
-                    gap: "0.45rem",
-                    padding: "0.75rem 1.25rem",
-                    borderRadius: "var(--radius-full)",
-                    color: "var(--text-secondary)",
-                    fontSize: "0.875rem",
-                    fontWeight: 500,
-                    transition: "var(--transition-smooth)",
-                  }}
-                  onMouseEnter={(e) =>
-                    (e.currentTarget.style.color = "var(--text-primary)")
-                  }
-                  onMouseLeave={(e) =>
-                    (e.currentTarget.style.color = "var(--text-secondary)")
-                  }
-                >
-                  <FileDown size={15} />
-                  <span>Print CV</span>
-                </button>
               </div>
             </div>
           </div>
@@ -230,9 +205,9 @@ export default function Home() {
                 <Image
                   src="/images/promptcloud-logo.png"
                   alt="PromptCloud"
-                  width={90}
-                  height={24}
-                  style={{ objectFit: "contain" }}
+                  width={68}
+                  height={17}
+                  style={{ objectFit: "contain", height: "17px", width: "auto" }}
                 />
               </div>
 
@@ -325,14 +300,6 @@ export default function Home() {
                     }}
                   >
                     Preetish Panda
-                  </div>
-                  <div
-                    style={{
-                      fontSize: "0.8125rem",
-                      color: "var(--text-tertiary)",
-                    }}
-                  >
-                    Director of Growth at Passage • Writing Growth Log
                   </div>
                 </div>
               </div>
@@ -448,7 +415,7 @@ export default function Home() {
               }}
             >
               From writing analytics algorithms at Oracle to scaling revenue from
-              scratch into the millions at Bettermode, TeamWave, and PromptCloud.
+              scratch into double-digit millions at Bettermode, TeamWave, and PromptCloud.
             </p>
           </div>
 

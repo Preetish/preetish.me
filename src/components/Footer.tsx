@@ -59,25 +59,6 @@ export function Footer() {
               Marketing leader with 14 years of experience scaling modern tech
               products from early traction to millions in ARR.
             </p>
-            <div
-              style={{
-                display: "inline-flex",
-                alignItems: "center",
-                gap: "0.5rem",
-                fontSize: "0.8125rem",
-                color: "var(--text-tertiary)",
-              }}
-            >
-              <span
-                style={{
-                  width: 6,
-                  height: 6,
-                  borderRadius: "50%",
-                  backgroundColor: "var(--accent-primary)",
-                }}
-              />
-              <span>Director of Growth at Passage • Writing Growth Log</span>
-            </div>
           </div>
 
           {/* Navigation Links */}
@@ -252,7 +233,7 @@ export function Footer() {
           }}
         >
           <div>
-            © {year} Preetish Panda. Built with Next.js &amp; deployed on Vercel.
+            © {year} Preetish Panda.
           </div>
 
           <button

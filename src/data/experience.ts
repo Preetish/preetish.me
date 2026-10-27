@@ -27,22 +27,24 @@ export const experiences: ExperienceItem[] = [
     logo: "/images/passagehq-logo.jpg",
     logoAlt: "Passage",
     summary:
-      "Leading growth across the full acquisition funnel, lifecycle activation, and go-to-market execution.",
+      "Leading growth across the full acquisition funnel, product-led activation, and lifecycle execution—scaling ARR from $6M to $21M.",
     description:
-      "Joined Passage to head growth. Focused on building repeatable acquisition flywheels, driving product-led activation, and optimizing the customer journey from first touch to expansion.",
+      "Joined Passage to head growth. Focused on building repeatable acquisition flywheels, driving product-led activation, and optimizing the customer journey from first touch to expansion, scaling ARR from $6M to $21M.",
     highlights: [
+      "Scaled ARR from $6M to $21M (3.5x growth) by building high-velocity acquisition channels and compounding lifecycle flywheels.",
       "Own the end-to-end customer acquisition funnel across paid performance, organic inbound, and strategic channels.",
       "Architected product-led onboarding sequences and automated lifecycle loops that improved user activation.",
       "Collaborate closely with product, sales, and engineering to sharpen positioning and accelerate GTM velocity.",
     ],
     skills: [
+      "$6M → $21M Scale",
+      "3.5x ARR Expansion",
       "Growth Leadership",
       "Full-Funnel Acquisition",
       "GTM Strategy",
       "Product Activation",
-      "Lifecycle Nurturing",
     ],
-    metrics: "Current Growth Leadership",
+    metrics: "$6M → $21M ARR (3.5x)",
   },
   {
     id: "bettermode-marketing",
@@ -55,23 +57,23 @@ export const experiences: ExperienceItem[] = [
     logo: "/images/bettermode-logo.png",
     logoAlt: "Bettermode",
     summary:
-      "Joined as employee #2 and built the entire marketing organization from scratch, scaling ARR to millions.",
+      "Joined as employee #2 and built the entire marketing organization from scratch, scaling ARR to $10M+.",
     description:
       "Built the marketing foundations from day zero. Handled everything from inbound demand generation and account-based marketing (ABM) to product marketing, company rebranding, and customer acquisition.",
     highlights: [
-      "Scaled ARR from early bootstrap stage into the multi-millions as marketing employee #2.",
+      "Scaled ARR from early bootstrap stage into double-digit millions ($10M+) as marketing employee #2.",
       "Architected an organic content and SEO engine that drove hundreds of thousands of organic visits and qualified pipeline.",
       "Executed targeted Account-Based Marketing (ABM) plays converting high-value enterprise accounts.",
       "Recruited, led, and mentored a cross-functional marketing team across content, design, and growth.",
     ],
     skills: [
       "0 → 1 Building",
-      "ARR Scaling ($M+)",
+      "ARR Scaling ($10M+)",
       "Account-Based Marketing (ABM)",
       "Inbound Flywheel",
       "Brand & Positioning",
     ],
-    metrics: "Scaled ARR to $M+ from scratch",
+    metrics: "Scaled ARR to $10M+ from scratch",
   },
   {
     id: "promptcloud-growth",
@@ -84,22 +86,22 @@ export const experiences: ExperienceItem[] = [
     logo: "/images/promptcloud-logo.png",
     logoAlt: "PromptCloud",
     summary:
-      "Developed and executed marketing plans resulting in a 200% increase in revenue over a 3-year period.",
+      "Developed and executed marketing plans resulting in a 300% increase in revenue over a 3-year period.",
     description:
       "Managed a dedicated team of 3 marketers and oversaw all inbound and outbound marketing initiatives, web analytics, and lead generation pipelines for enterprise web data extraction.",
     highlights: [
-      "Achieved a 200% increase in revenue over a 3-year horizon through repeatable growth playbooks.",
+      "Achieved a 300% increase in revenue over a 3-year horizon through repeatable growth playbooks.",
       "Spearheaded targeted inbound marketing and technical SEO campaigns attracting global enterprises.",
       "Managed marketing budget and optimized unit economics across paid acquisition and content distribution.",
     ],
     skills: [
-      "200% Revenue Lift",
+      "300% Revenue Lift",
       "Team Management",
       "Inbound Marketing",
       "Technical SEO",
       "Enterprise Lead Gen",
     ],
-    metrics: "+200% Revenue over 3 years",
+    metrics: "+300% Revenue over 3 years",
   },
   {
     id: "teamwave-product",

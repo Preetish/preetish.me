@@ -63,31 +63,13 @@ export function Header() {
           style={{
             display: "flex",
             alignItems: "center",
-            gap: "0.75rem",
             fontWeight: 600,
             fontSize: "1.0625rem",
             letterSpacing: "-0.02em",
             color: "var(--text-primary)",
           }}
         >
-          <span
-            style={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              width: 32,
-              height: 32,
-              borderRadius: "8px",
-              backgroundColor: "var(--accent-surface)",
-              border: "1px solid var(--accent-border)",
-              color: "var(--accent-text)",
-              fontSize: "0.875rem",
-              fontWeight: 700,
-            }}
-          >
-            P
-          </span>
-          <span>Preetish Panda</span>
+          <span>Preetish</span>
         </Link>
 
         {/* Desktop Navigation */}

@@ -2,28 +2,9 @@ import { skillCategories } from "@/data/skills";
 
 export function SkillsGrid() {
   return (
-    <div
-      style={{
-        display: "grid",
-        gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
-        gap: "1.5rem",
-      }}
-    >
+    <div className="skills-grid">
       {skillCategories.map((cat, idx) => (
-        <div
-          key={idx}
-          style={{
-            backgroundColor: "var(--bg-surface)",
-            border: "1px solid var(--border-subtle)",
-            borderRadius: "var(--radius-lg)",
-            padding: "1.75rem",
-            boxShadow: "var(--card-shadow)",
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "space-between",
-            transition: "var(--transition-smooth)",
-          }}
-        >
+        <div key={idx} className="skill-card">
           <div>
             <h3
               style={{

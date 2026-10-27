@@ -89,7 +89,7 @@ export function CommandPalette() {
     {
       id: "experience",
       title: "Career & Experience",
-      subtitle: "Passage, Bettermode, PromptCloud, TeamWave, Oracle",
+      subtitle: "Passage, Bettermode, PromptCloud, Oracle",
       icon: <Briefcase size={16} />,
       category: "Navigation",
       action: () => jumpTo("experience"),

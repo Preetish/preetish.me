@@ -26,13 +26,14 @@ export function MetricsBar() {
         >
           <div
             style={{
-              fontSize: "2.125rem",
+              fontSize: "clamp(1.4rem, 1.85vw, 1.875rem)",
               fontWeight: 700,
               letterSpacing: "-0.03em",
               color: "var(--text-primary)",
-              lineHeight: 1.1,
+              lineHeight: 1.15,
               marginBottom: "0.4rem",
               fontVariantNumeric: "tabular-nums",
+              whiteSpace: "nowrap",
             }}
           >
             {stat.value}
