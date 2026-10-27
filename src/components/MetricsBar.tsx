@@ -53,6 +53,7 @@ export function MetricsBar() {
               fontSize: "0.75rem",
               color: "var(--text-tertiary)",
               lineHeight: 1.4,
+              whiteSpace: "nowrap",
             }}
           >
             {stat.subtext}

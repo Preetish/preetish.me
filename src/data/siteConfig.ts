@@ -30,7 +30,7 @@ export const siteConfig: SiteConfig = {
     "An engineer-turned-growth leader blending analytical rigor with creative positioning. Experienced in taking tech companies from zero-to-one traction to millions in ARR.",
   fullBio: [
     "Background: Engineer from Oracle who brought systems thinking and data architecture to growth.",
-    "Track Record: 14 years scaling tech companies—built Bettermode to $10M+ ARR as employee #2, and currently scaling Passage ($6M → $21M ARR).",
+    "Track Record: 14 years scaling tech companies—from early-stage scale ($0 → $5M+) to ARR expansion ($6M → $21M).",
     "Philosophy: Outsized impact comes from executing simple things consistently.",
   ],
   newsletterUrl: "https://growthlog.substack.com",
@@ -67,17 +67,17 @@ export const siteConfig: SiteConfig = {
       subtext: "Years scaling tech companies",
     },
     {
-      label: "Passage Scale",
+      label: "ARR Scaled",
+      value: "$0 → $5M+",
+      subtext: "From seed to multi-millions",
+    },
+    {
+      label: "ARR Expansion",
       value: "$6M → $21M",
-      subtext: "3.5x ARR expansion at current role",
+      subtext: "3.5x ARR expansion",
     },
     {
-      label: "Bettermode ARR",
-      value: "$0 → $10M+",
-      subtext: "From seed to 8-figure revenue",
-    },
-    {
-      label: "PromptCloud Lift",
+      label: "Revenue Lift",
       value: "300%",
       subtext: "Revenue growth over 3 years",
     },
