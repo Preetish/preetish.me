@@ -71,7 +71,7 @@ export const siteConfig: SiteConfig = {
     {
       label: "Zero to scale",
       value: "$0 → $5M+",
-      subtext: "ARR, starting as employee #2",
+      subtext: "ARR, starting as an early employee",
     },
     {
       label: "Revenue growth",
