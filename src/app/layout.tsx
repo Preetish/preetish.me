@@ -31,29 +31,30 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://preetish.me"),
-  title: "Preetish Panda — Full-Stack Marketer & Growth Leader",
+  title: "Preetish Panda — Engineer-turned Growth Leader",
   description:
-    "Marketing leader with 14 years of experience driving sustainable growth for modern tech companies. Engineering background applied to full-funnel acquisition, GTM, and ARR scaling.",
+    "Engineer-turned growth leader. I build growth systems for tech and AI-native companies, along with open-source MarTech tools and published research on marketing.",
   authors: [{ name: "Preetish Panda", url: "https://preetish.me" }],
   creator: "Preetish Panda",
   keywords: [
     "Preetish Panda",
     "Growth Marketing",
-    "Product Marketing",
+    "Head of Growth",
     "Director of Growth",
-    "Tech Marketing Leader",
+    "Product Marketing",
     "GTM Strategy",
     "Bettermode",
     "Passage",
-    "Full-Funnel Growth",
+    "Switchboard",
+    "Marketing Attribution",
   ],
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://preetish.me",
-    title: "Preetish Panda — Full-Stack Marketer & Growth Leader",
+    title: "Preetish Panda — Engineer-turned Growth Leader",
     description:
-      "Marketing leader with 14 years of experience driving sustainable growth for modern tech companies.",
+      "Engineer-turned growth leader. Building growth systems, open-source tools, and marketing research.",
     siteName: "Preetish Panda",
     images: [
       {
@@ -66,15 +67,18 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Preetish Panda — Full-Stack Marketer & Growth Leader",
+    title: "Preetish Panda — Engineer-turned Growth Leader",
     description:
-      "Marketing leader with 14 years of experience driving sustainable growth for modern tech companies.",
+      "Engineer-turned growth leader. Building growth systems, open-source tools, and marketing research.",
     creator: "@Pr33tish",
     images: ["/images/avatar.jpg"],
   },
   icons: {
-    icon: "/images/favicon.png",
-    apple: "/images/favicon.png",
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon.ico" },
+    ],
+    apple: "/favicon.svg",
   },
 };
 

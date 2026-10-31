@@ -2,6 +2,8 @@ export interface SiteConfig {
   name: string;
   title: string;
   role: string;
+  /** Single source of truth — referenced everywhere instead of hard-coding. */
+  yearsExperience: string;
   tagline: string;
   shortBio: string;
   fullBio: string[];
@@ -20,18 +22,22 @@ export interface SiteConfig {
   }[];
 }
 
+const yearsExperience = "15+";
+
 export const siteConfig: SiteConfig = {
   name: "Preetish Panda",
-  title: "Preetish Panda — Full-Stack Marketer & Growth Leader",
-  role: "Full-Stack Marketer & Growth Leader",
+  title: "Preetish Panda — Engineer-turned Growth Leader",
+  role: "Engineer-turned Growth Leader",
+  yearsExperience,
   avatar: "/images/avatar.jpg",
-  tagline: "Marketing leader with 14 years of experience driving sustainable growth for modern tech companies.",
+  tagline:
+    "Engineer-turned growth leader. I build growth systems for tech and AI-native companies, along with open-source tools and marketing research.",
   shortBio:
-    "An engineer-turned-growth leader blending analytical rigor with creative positioning. Experienced in taking tech companies from zero-to-one traction to millions in ARR.",
+    "Engineer-turned growth leader. Employee #2 at Bettermode, former Director of Growth at Passage, now heading growth at an AI-native legal services firm.",
   fullBio: [
-    "Background: Engineer from Oracle who brought systems thinking and data architecture to growth.",
-    "Track Record: 14 years scaling tech companies—from zero-to-one traction to multi-stage ARR expansion.",
-    "Philosophy: Outsized impact comes from executing simple things consistently.",
+    "Background: Started as a software engineer at Oracle. I still treat funnels like systems to instrument and debug.",
+    "Track Record: Employee #2 and first marketing hire at Bettermode. I've led growth from zero to millions in revenue.",
+    "Builder & Researcher: I ship open-source MarTech tools and publish peer-reviewed research on customer behavior and growth systems.",
   ],
   newsletterUrl: "https://growthlog.substack.com",
   socials: [
@@ -60,26 +66,27 @@ export const siteConfig: SiteConfig = {
       username: "Preetish",
     },
   ],
+  // Revenue figures are intentionally never tied to a company name.
   stats: [
     {
-      label: "Experience",
-      value: "14+ Years",
-      subtext: "Scaling tech companies",
-    },
-    {
-      label: "ARR Scaled",
+      label: "Zero to scale",
       value: "$0 → $5M+",
-      subtext: "From seed to multi-millions",
+      subtext: "ARR, starting as employee #2",
     },
     {
-      label: "ARR Expansion",
-      value: "$6M → $21M",
-      subtext: "3.5x ARR expansion",
+      label: "Revenue growth",
+      value: "$7M → $28M",
+      subtext: "4x revenue growth",
     },
     {
-      label: "Revenue Lift",
+      label: "Revenue lift",
       value: "300%",
       subtext: "Revenue growth over 3 years",
+    },
+    {
+      label: "Experience",
+      value: `${yearsExperience} years`,
+      subtext: "Engineering, then growth",
     },
   ],
 };

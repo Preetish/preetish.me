@@ -24,10 +24,10 @@ export function Header() {
   const navLinks = [
     { label: "About", href: "#about" },
     { label: "Experience", href: "#experience" },
+    { label: "Research & Code", href: "#building" },
     { label: "Skills", href: "#skills" },
     { label: "Philosophy", href: "#philosophy" },
     { label: "Growth Log", href: "#newsletter" },
-    { label: "Contact", href: "#contact" },
   ];
 
   return (
@@ -208,6 +208,18 @@ export function Header() {
               {link.label}
             </a>
           ))}
+          <a
+            href="#contact"
+            onClick={() => setMobileMenuOpen(false)}
+            style={{
+              fontSize: "1rem",
+              color: "var(--text-primary)",
+              fontWeight: 500,
+              padding: "0.5rem 0",
+            }}
+          >
+            Contact
+          </a>
         </div>
       )}
 

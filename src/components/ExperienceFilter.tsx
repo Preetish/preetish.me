@@ -3,9 +3,9 @@
 import { useState } from "react";
 import Image from "next/image";
 import { experiences, ExperienceItem } from "@/data/experience";
-import { CheckCircle2, ChevronRight } from "lucide-react";
+import { CheckCircle2, ChevronRight, Scale } from "lucide-react";
 
-type FilterType = "all" | "growth" | "leadership" | "product" | "engineering";
+type FilterType = "all" | "growth" | "leadership" | "engineering";
 
 export function ExperienceFilter() {
   const [activeFilter, setActiveFilter] = useState<FilterType>("all");
@@ -15,16 +15,21 @@ export function ExperienceFilter() {
     { id: "all", label: "All Experience" },
     { id: "growth", label: "Growth & GTM" },
     { id: "leadership", label: "Leadership" },
-    { id: "product", label: "Product Marketing" },
     { id: "engineering", label: "Technical Roots" },
   ];
 
   const filtered = experiences.filter((exp) => {
     if (activeFilter === "all") return true;
-    if (activeFilter === "growth") return exp.category === "growth" || exp.category === "leadership";
-    if (activeFilter === "leadership") return exp.category === "leadership";
-    if (activeFilter === "product") return exp.category === "product";
-    if (activeFilter === "engineering") return exp.category === "engineering" || exp.category === "consulting";
+    if (activeFilter === "growth")
+      return (
+        exp.category === "growth" ||
+        exp.category === "leadership" ||
+        exp.category === "product"
+      );
+    if (activeFilter === "leadership")
+      return exp.category !== "engineering" && exp.category !== "consulting";
+    if (activeFilter === "engineering")
+      return exp.category === "engineering" || exp.category === "consulting";
     return true;
   });
 
@@ -120,13 +125,17 @@ export function ExperienceFilter() {
                 <div style={{ display: "flex", gap: "1rem", alignItems: "center" }}>
                   {/* Company Logo container */}
                   <div className="company-logo-badge">
-                    <Image
-                      src={item.logo}
-                      alt={item.logoAlt}
-                      width={36}
-                      height={36}
-                      style={{ objectFit: "contain", maxHeight: "100%", maxWidth: "100%" }}
-                    />
+                    {item.logo ? (
+                      <Image
+                        src={item.logo}
+                        alt={item.logoAlt}
+                        width={36}
+                        height={36}
+                        style={{ objectFit: "contain", maxHeight: "100%", maxWidth: "100%" }}
+                      />
+                    ) : (
+                      <Scale size={20} color="var(--text-secondary)" aria-label={item.logoAlt} />
+                    )}
                   </div>
 
                   <div>
@@ -164,29 +173,9 @@ export function ExperienceFilter() {
                         color: "var(--text-secondary)",
                         marginTop: "0.15rem",
                         fontWeight: 500,
-                        display: "flex",
-                        alignItems: "center",
-                        gap: "0.35rem",
                       }}
                     >
-                      {item.website ? (
-                        <a
-                          href={item.website}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          onClick={(e) => e.stopPropagation()}
-                          style={{
-                            color: "inherit",
-                            textDecoration: "underline",
-                            textDecorationColor: "var(--border-hover)",
-                            textUnderlineOffset: "2px",
-                          }}
-                        >
-                          {item.company}
-                        </a>
-                      ) : (
-                        <span>{item.company}</span>
-                      )}
+                      {item.company}
                     </div>
                   </div>
                 </div>

@@ -7,7 +7,8 @@ import { ExperienceFilter } from "@/components/ExperienceFilter";
 import { SkillsGrid } from "@/components/SkillsGrid";
 import { PhilosophySection } from "@/components/PhilosophySection";
 import { ContactSection } from "@/components/ContactSection";
-import { ArrowUpRight, Sparkles, Terminal, TrendingUp, Compass } from "lucide-react";
+import { WorkSection } from "@/components/WorkSection";
+import { ArrowUpRight, Terminal, TrendingUp, Compass } from "lucide-react";
 
 export default function Home() {
   return (
@@ -42,11 +43,12 @@ export default function Home() {
                   marginBottom: "1.5rem",
                 }}
               >
-                Scaling tech companies from <br />
+                Engineer by training,
+                <br />
                 <span className="editorial" style={{ fontWeight: 400 }}>
-                  early traction
+                  growth leader
                 </span>{" "}
-                to millions in ARR.
+                by trade.
               </h1>
 
               {/* Subheading */}
@@ -59,11 +61,12 @@ export default function Home() {
                   marginBottom: "2rem",
                 }}
               >
-                I&apos;m <strong>Preetish Panda</strong>, Director of Growth at{" "}
-                <strong>Passage</strong> and former marketing leader at{" "}
-                <strong>Bettermode</strong>. With 14 years blending engineering
-                rigor with creative positioning, I build repeatable acquisition
-                flywheels, GTM plays, and product marketing engines that compound.
+                I&apos;m <strong>Preetish Panda</strong>. I head growth at an
+                AI-native legal services firm. Before that I ran growth at{" "}
+                <strong>Passage</strong> and was employee #2 at{" "}
+                <strong>Bettermode</strong>, where I built marketing from
+                scratch. I also build open-source tools and publish research on
+                marketing.
               </p>
 
               {/* Actions */}
@@ -95,7 +98,7 @@ export default function Home() {
                   onMouseEnter={(e) => (e.currentTarget.style.opacity = "0.88")}
                   onMouseLeave={(e) => (e.currentTarget.style.opacity = "1")}
                 >
-                  <span>Explore Career</span>
+                  <span>See my work</span>
                   <ArrowUpRight size={17} />
                 </a>
 
@@ -150,7 +153,7 @@ export default function Home() {
                 marginBottom: "1.25rem",
               }}
             >
-              Proven experience across leading tech organizations
+              Where I&apos;ve worked
             </p>
 
             <div
@@ -304,9 +307,9 @@ export default function Home() {
                   marginBottom: "1.5rem",
                 }}
               >
-                Collaborative, creative, and{" "}
+                An engineer who{" "}
                 <span className="editorial" style={{ fontWeight: 400 }}>
-                  analytical.
+                  fell for marketing.
                 </span>
               </h2>
 
@@ -340,16 +343,21 @@ export default function Home() {
                         <p className="bio-pillar-text">
                           {idx === 0 ? (
                             <>
-                              Engineer from <strong>Oracle</strong> who brought systems thinking and data architecture to growth.
+                              Started as a software engineer at <strong>Oracle</strong>. I still
+                              treat funnels like systems to instrument and debug.
                             </>
                           ) : idx === 1 ? (
                             <>
-                              14 years scaling tech companies—from{" "}
-                              <strong>zero-to-one traction</strong> to{" "}
-                              <strong>multi-stage ARR expansion</strong>.
+                              <strong>Employee #2</strong> and first marketing hire at{" "}
+                              <strong>Bettermode</strong>. I&apos;ve led growth from zero to
+                              millions in revenue.
                             </>
                           ) : (
-                            text
+                            <>
+                              I ship <strong>open-source MarTech tools</strong> and publish{" "}
+                              <strong>peer-reviewed research</strong> on customer behavior
+                              and growth systems.
+                            </>
                           )}
                         </p>
                       </div>
@@ -387,9 +395,10 @@ export default function Home() {
                 marginBottom: "0.75rem",
               }}
             >
-              14 years of scaling
-              <br />
-              tech companies.
+              From first hire to{" "}
+              <span className="editorial" style={{ fontWeight: 400 }}>
+                Head of Growth.
+              </span>
             </h2>
             <p
               style={{
@@ -398,8 +407,9 @@ export default function Home() {
                 lineHeight: 1.6,
               }}
             >
-              From writing analytics algorithms at Oracle to building high-velocity
-              growth engines across Bettermode, Passage, TeamWave, and PromptCloud.
+              Software engineering at Oracle, then growth roles at TeamWave,
+              PromptCloud, Bettermode, Passage, and now an AI-native legal
+              services firm.
             </p>
           </div>
 
@@ -407,8 +417,54 @@ export default function Home() {
         </div>
       </section>
 
+      {/* BUILDING & RESEARCH SECTION */}
+      <section id="building" className="section">
+        <div className="container">
+          <div style={{ maxWidth: "680px", marginBottom: "2.5rem" }}>
+            <span className="badge badge-accent" style={{ marginBottom: "1rem" }}>
+              Building &amp; Research
+            </span>
+            <h2
+              style={{
+                fontSize: "clamp(1.875rem, 4vw, 2.75rem)",
+                fontWeight: 700,
+                letterSpacing: "-0.025em",
+                lineHeight: 1.2,
+                color: "var(--text-primary)",
+                marginBottom: "0.75rem",
+              }}
+            >
+              I also build{" "}
+              <span className="editorial" style={{ fontWeight: 400 }}>
+                and publish.
+              </span>
+            </h2>
+            <p
+              style={{
+                fontSize: "1rem",
+                color: "var(--text-secondary)",
+                lineHeight: 1.6,
+              }}
+            >
+              Open-source tools for problems I&apos;ve hit in growth work, and
+              peer-reviewed research on marketing.
+            </p>
+          </div>
+
+          <WorkSection />
+        </div>
+      </section>
+
       {/* SKILLS SECTION */}
-      <section id="skills" className="section">
+      <section
+        id="skills"
+        className="section"
+        style={{
+          backgroundColor: "var(--bg-surface-elevated)",
+          borderTop: "1px solid var(--border-subtle)",
+          borderBottom: "1px solid var(--border-subtle)",
+        }}
+      >
         <div className="container">
           <div style={{ maxWidth: "680px", marginBottom: "2.5rem" }}>
             <span className="badge badge-accent" style={{ marginBottom: "1rem" }}>
@@ -424,7 +480,7 @@ export default function Home() {
                 marginBottom: "0.75rem",
               }}
             >
-              Skills &amp; Toolset.
+              Skills &amp; Toolset
             </h2>
             <p
               style={{
@@ -433,8 +489,8 @@ export default function Home() {
                 lineHeight: 1.6,
               }}
             >
-              A holistic blend of full-funnel marketing execution, product
-              positioning, data analytics, and modern web architecture.
+              Full-funnel marketing, positioning, and analytics, plus enough
+              engineering to build the tools myself.
             </p>
           </div>
 
@@ -447,9 +503,6 @@ export default function Home() {
         id="philosophy"
         className="section"
         style={{
-          backgroundColor: "var(--bg-surface-elevated)",
-          borderTop: "1px solid var(--border-subtle)",
-          borderBottom: "1px solid var(--border-subtle)",
           position: "relative",
         }}
       >
@@ -468,7 +521,7 @@ export default function Home() {
                 marginBottom: "0.75rem",
               }}
             >
-              Growth Philosophy.
+              Growth Philosophy
             </h2>
             <p
               style={{
@@ -477,8 +530,8 @@ export default function Home() {
                 lineHeight: 1.6,
               }}
             >
-              The foundational convictions that guide how I diagnose funnels,
-              position products, and scale high-growth tech companies.
+              The principles behind how I diagnose funnels and position
+              products.
             </p>
           </div>
 
@@ -487,7 +540,14 @@ export default function Home() {
       </section>
 
       {/* CONTACT SECTION */}
-      <section id="contact" className="section">
+      <section
+        id="contact"
+        className="section"
+        style={{
+          backgroundColor: "var(--bg-surface-elevated)",
+          borderTop: "1px solid var(--border-subtle)",
+        }}
+      >
         <div className="container">
           <ContactSection />
         </div>

@@ -56,8 +56,8 @@ export function Footer() {
                 marginBottom: "1.25rem",
               }}
             >
-              Marketing leader with 14 years of experience scaling modern tech
-              products from early traction to millions in ARR.
+              Engineer-turned growth leader. Building growth systems, open-source
+              tools, and marketing research.
             </p>
           </div>
 
@@ -92,7 +92,10 @@ export function Footer() {
                 <a href="#experience">Career &amp; Experience</a>
               </li>
               <li>
-                <a href="#skills">Skills &amp; Expertise</a>
+                <a href="#building">Building &amp; Research</a>
+              </li>
+              <li>
+                <a href="#skills">Skills &amp; Toolset</a>
               </li>
               <li>
                 <a href="#philosophy">Growth Philosophy</a>

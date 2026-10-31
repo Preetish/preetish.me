@@ -265,7 +265,7 @@ export function PhilosophySection() {
               <span>Growth Log</span>
               <span style={{ color: "var(--text-tertiary)", fontWeight: 400 }}>—</span>
               <span style={{ color: "var(--text-secondary)", fontWeight: 500 }}>
-                Actionable growth playbooks for tech leaders
+                Notes on growth, positioning, and marketing systems
               </span>
             </div>
             <div
@@ -275,7 +275,7 @@ export function PhilosophySection() {
                 marginTop: "0.25rem",
               }}
             >
-              Actionable guides, practical frameworks, and counter-intuitive growth ideas.
+              Practical frameworks, experiments, and lessons from the field.
             </div>
           </div>
         </div>

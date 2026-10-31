@@ -29,10 +29,10 @@ export function ContactSection() {
         setStatus("success");
         setFormData({ name: "", email: "", subject: "", message: "" });
       } else {
-        setStatus("success");
+        setStatus("error");
       }
     } catch {
-      setStatus("success");
+      setStatus("error");
     }
   };
 
@@ -65,7 +65,7 @@ export function ContactSection() {
             lineHeight: 1.25,
           }}
         >
-          Let&apos;s talk growth, GTM, or advisory.
+          Say hello.
         </h3>
 
         <p
@@ -76,8 +76,8 @@ export function ContactSection() {
             marginBottom: "1.75rem",
           }}
         >
-          Have a growth bottleneck to solve, a GTM question, or an advisory
-          opportunity for your tech venture? Fill out the form or reach out directly on LinkedIn.
+          Want to talk about growth, marketing, open-source tools, or
+          just exchange notes? Send a message here or reach out on LinkedIn.
         </p>
 
         {/* LinkedIn Direct CTA Card */}
@@ -412,12 +412,12 @@ export function ContactSection() {
                   marginBottom: "0.35rem",
                 }}
               >
-                Subject / Project Topic
+                Topic
               </label>
               <input
                 id="subject"
                 type="text"
-                placeholder="Growth Strategy, GTM Advisory, or Consultation"
+                placeholder="Growth, open source, research, or just saying hi"
                 value={formData.subject}
                 onChange={(e) =>
                   setFormData({ ...formData, subject: e.target.value })
@@ -453,7 +453,7 @@ export function ContactSection() {
                 id="message"
                 required
                 rows={4}
-                placeholder="Tell me a bit about your company, current stage, and goals..."
+                placeholder="What's on your mind?"
                 value={formData.message}
                 onChange={(e) =>
                   setFormData({ ...formData, message: e.target.value })
@@ -472,6 +472,27 @@ export function ContactSection() {
                 }}
               />
             </div>
+
+            {status === "error" && (
+              <p
+                style={{
+                  fontSize: "0.8125rem",
+                  color: "var(--text-secondary)",
+                  margin: 0,
+                }}
+              >
+                Something went wrong sending your message. Please try again or reach out directly on{" "}
+                <a
+                  href="https://www.linkedin.com/in/preetishpanda/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ textDecoration: "underline", color: "var(--text-primary)" }}
+                >
+                  LinkedIn
+                </a>
+                .
+              </p>
+            )}
 
             <button
               type="submit"

@@ -6,7 +6,8 @@ export interface ExperienceItem {
   period: string;
   current?: boolean;
   category: "growth" | "leadership" | "product" | "consulting" | "engineering";
-  logo: string;
+  /** Optional: roles kept confidential render a generic icon instead of a logo. */
+  logo?: string;
   logoAlt: string;
   summary: string;
   description: string;
@@ -17,31 +18,54 @@ export interface ExperienceItem {
 
 export const experiences: ExperienceItem[] = [
   {
+    // Employer intentionally unnamed until the role is public.
+    id: "legal-growth",
+    role: "Head of Growth",
+    company: "AI-native legal services firm",
+    period: "2026 — Present",
+    current: true,
+    category: "growth",
+    logoAlt: "AI-native legal services firm",
+    summary:
+      "Heading growth at a legal services firm built around AI, collaborating with an in-house team of engineers, designers, and product managers.",
+    description:
+      "Joined in May 2026 to head growth at a law firm that runs on software and machine learning rather than billable-hour headcount.",
+    highlights: [
+      "Own growth strategy across acquisition, conversion, and lifecycle.",
+      "Work with engineering, design, and product teams to turn software capabilities into growth levers.",
+    ],
+    skills: [
+      "Growth Leadership",
+      "AI-Native Services",
+      "Legal Tech",
+      "Full-Funnel Acquisition",
+    ],
+  },
+  {
     id: "passage-growth",
     role: "Director of Growth",
     company: "Passage",
-    website: "https://passage.com",
-    period: "2023 — Present",
-    current: true,
+    period: "2023 — 2026",
+    current: false,
     category: "growth",
     logo: "/images/passagehq-logo.jpg",
     logoAlt: "Passage",
     summary:
-      "Leading growth across the full acquisition funnel, product-led activation, and lifecycle execution.",
+      "Led growth across acquisition, product-led activation, and lifecycle.",
     description:
-      "Joined Passage to head growth. Focused on building repeatable acquisition flywheels, driving product-led activation, and optimizing the customer journey from first touch to expansion.",
+      "Joined Passage to head growth, owning the customer journey from first touch through activation and expansion.",
     highlights: [
-      "Accelerated full-funnel acquisition by building high-velocity organic, paid, and lifecycle growth channels.",
-      "Own the end-to-end customer journey across acquisition, activation, and product expansion.",
-      "Architected product-led onboarding sequences and automated lifecycle loops that improved user activation.",
-      "Collaborate closely with product, sales, and engineering to sharpen positioning and accelerate GTM velocity.",
+      "Built organic, paid, and lifecycle channels across the full funnel.",
+      "Owned the customer journey from acquisition through activation and expansion.",
+      "Designed product-led onboarding and automated lifecycle emails that improved activation.",
+      "Worked with product, sales, and engineering to sharpen positioning and ship launches faster.",
     ],
     skills: [
       "Growth Leadership",
       "Full-Funnel Acquisition",
       "GTM Strategy",
       "Product Activation",
-      "Lifecycle Loops",
+      "Lifecycle Marketing",
       "Conversion Optimization",
     ],
   },
@@ -49,49 +73,48 @@ export const experiences: ExperienceItem[] = [
     id: "bettermode-marketing",
     role: "Director of Marketing",
     company: "Bettermode Inc.",
-    website: "https://bettermode.com",
     period: "2019 — 2023",
     current: false,
     category: "leadership",
     logo: "/images/bettermode-logo.png",
     logoAlt: "Bettermode",
     summary:
-      "Joined as employee #2 and built the entire marketing organization from scratch, driving zero-to-one category leadership.",
+      "Employee #2 and the first marketing hire. Built the marketing function from nothing.",
     description:
-      "Built the marketing foundations from day zero as employee #2. Handled everything from inbound demand generation and account-based marketing (ABM) to product marketing, company rebranding, and customer acquisition.",
+      "Joined as employee #2 and built marketing from day zero: inbound demand generation, account-based marketing, product marketing, a company rebrand, and customer acquisition.",
     highlights: [
-      "Joined as marketing employee #2 and built the marketing department, systems, and playbooks from scratch.",
-      "Architected an organic content and SEO engine that drove hundreds of thousands of organic visits and qualified pipeline.",
-      "Executed targeted Account-Based Marketing (ABM) plays converting high-value enterprise accounts.",
-      "Recruited, led, and mentored a cross-functional marketing team across content, design, and growth.",
+      "Built the marketing team, systems, and playbooks from scratch as the first marketing hire.",
+      "Built an SEO and content program that drove hundreds of thousands of organic visits and qualified pipeline.",
+      "Ran account-based campaigns that won high-value enterprise accounts.",
+      "Led the company rebrand and product positioning.",
+      "Hired and led a team across content, design, and growth.",
     ],
     skills: [
-      "Employee #2",
-      "0 → 1 Building",
       "Account-Based Marketing (ABM)",
-      "Inbound Flywheel",
+      "SEO & Content",
       "Brand & Positioning",
+      "Product Marketing",
       "Team Leadership",
     ],
+    metrics: "Employee #2",
   },
   {
     id: "promptcloud-growth",
     role: "Head of Growth (Marketing)",
     company: "PromptCloud Pvt. Ltd.",
-    website: "https://promptcloud.com",
     period: "2016 — 2019",
     current: false,
     category: "growth",
     logo: "/images/promptcloud-logo.png",
     logoAlt: "PromptCloud",
     summary:
-      "Developed and executed marketing plans resulting in substantial multi-year revenue and pipeline expansion.",
+      "Ran marketing for an enterprise web-data company and grew revenue and pipeline over three years.",
     description:
-      "Managed a dedicated team of 3 marketers and oversaw all inbound and outbound marketing initiatives, web analytics, and lead generation pipelines for enterprise web data extraction.",
+      "Managed a team of three marketers and owned inbound and outbound marketing, web analytics, and lead generation for enterprise web data extraction.",
     highlights: [
-      "Achieved compounding growth over a 3-year horizon through repeatable inbound and outbound growth playbooks.",
-      "Spearheaded targeted inbound marketing and technical SEO campaigns attracting global enterprises.",
-      "Managed marketing budget and optimized unit economics across paid acquisition and content distribution.",
+      "Built repeatable inbound and outbound programs that grew revenue year over year for three years.",
+      "Ran technical SEO and inbound campaigns that brought in global enterprise customers.",
+      "Managed the marketing budget and improved unit economics across paid and content channels.",
     ],
     skills: [
       "Full-Funnel Growth",
@@ -105,28 +128,27 @@ export const experiences: ExperienceItem[] = [
     id: "teamwave-product",
     role: "Product & Marketing Manager",
     company: "TeamWave Inc.",
-    website: "https://teamwave.com",
     period: "2015 — 2016",
     current: false,
     category: "product",
     logo: "/images/teamwave-logo.png",
     logoAlt: "TeamWave",
     summary:
-      "Joined as the first marketing hire and established the foundational go-to-market engine within the first year.",
+      "First marketing hire. Set up go-to-market in the first year.",
     description:
-      "Analyzed market trends, customer needs, and competitor landscapes to develop and execute the comprehensive go-to-market (GTM) strategy for an all-in-one small business CRM and project platform.",
+      "Studied the market, customers, and competitors to build the go-to-market strategy for an all-in-one CRM and project management platform for small businesses.",
     highlights: [
-      "Joined as foundational marketing hire to establish market positioning and product-led acquisition.",
-      "Conducted in-depth customer interviews to sharpen value proposition and product messaging.",
-      "Built automated email onboarding journeys that maximized free-to-paid conversion rates.",
+      "Set market positioning and product-led acquisition as the first marketing hire.",
+      "Ran customer interviews to sharpen the value proposition and product messaging.",
+      "Built automated onboarding emails that improved free-to-paid conversion.",
     ],
     skills: [
-      "First Marketing Hire",
       "GTM Strategy",
       "User Research",
       "Product Messaging",
       "Onboarding Automation",
     ],
+    metrics: "First marketing hire",
   },
   {
     id: "infosys-consultant",
@@ -138,21 +160,21 @@ export const experiences: ExperienceItem[] = [
     logo: "/images/infosys-logo.png",
     logoAlt: "Infosys",
     summary:
-      "Consulted enterprise clients on full-funnel digital strategies resulting in a 30% increase in qualified leads.",
+      "Advised enterprise clients on digital marketing and lifted qualified leads by 30%.",
     description:
-      "Transformed complex marketing requirements into technical solutions for internal and client development teams, connecting enterprise marketing tools with CRM infrastructure.",
+      "Translated marketing requirements into technical solutions for client and internal development teams, connecting enterprise marketing tools to CRM systems.",
     highlights: [
       "Advised multinational enterprise clients on digital marketing transformation.",
-      "Delivered a 30% increase in qualified leads through full-funnel optimization.",
-      "Bridged business strategy with engineering architecture.",
+      "Increased qualified leads by 30% through full-funnel optimization.",
+      "Connected business strategy with engineering architecture.",
     ],
     skills: [
       "Digital Strategy",
       "Enterprise Consulting",
-      "+30% Qualified Leads",
+      "MarTech Integration",
       "Tech Architecture",
     ],
-    metrics: "+30% Qualified Leads lift",
+    metrics: "+30% qualified leads",
   },
   {
     id: "oracle-engineer",
@@ -164,20 +186,19 @@ export const experiences: ExperienceItem[] = [
     logo: "/images/oracle-logo.png",
     logoAlt: "Oracle",
     summary:
-      "Built features for Oracle's financial analytics platform and received the 'i-Appreciate' award in the first year.",
+      "Built features for Oracle's financial analytics platform. Won the 'i-Appreciate' award in my first year.",
     description:
-      "Engineered core modules and analytics capabilities for financial services software. Collaborated with cross-functional teams to release mission-critical updates.",
+      "Built core modules and analytics features for financial services software, shipping releases with cross-functional teams.",
     highlights: [
-      "Honored with the 'i-Appreciate' company award in first year for exceptional engineering delivery.",
-      "Developed high-precision analytics and reporting components for financial enterprise clients.",
-      "Formed strong foundations in software systems, code architecture, and analytical problem-solving.",
+      "Received the 'i-Appreciate' award in my first year for engineering delivery.",
+      "Built analytics and reporting components for enterprise financial clients.",
+      "Learned to think in systems and data, a habit I still bring to growth work.",
     ],
     skills: [
       "Software Engineering",
       "Financial Analytics",
-      "i-Appreciate Award",
       "Data Systems",
     ],
-    metrics: "i-Appreciate Award Winner",
+    metrics: "i-Appreciate Award",
   },
 ];
