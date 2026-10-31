@@ -76,7 +76,7 @@ export const siteConfig: SiteConfig = {
     {
       label: "Revenue growth",
       value: "$7M → $28M",
-      subtext: "4x revenue growth",
+      subtext: "Annualized run rate growth",
     },
     {
       label: "Revenue lift",
